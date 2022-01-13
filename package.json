@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
     "build": "npx tsc",
     "prettier": "prettier 'src/*' --write",
     "lint": "eslint 'src/*' --ext .js,.ts"
@@ -12,6 +14,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jasmine": "^3.10.3",
+    "@types/jquery": "^3.5.13",
+    "@types/node": "^17.0.8",
+    "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
     "eslint": "^8.6.0",
@@ -20,5 +26,10 @@
     "eslint-plugin-react": "^7.28.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "supertest": "^6.2.1"
   }
 }
